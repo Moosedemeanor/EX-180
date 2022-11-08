@@ -1,8 +1,8 @@
-FROM ubi8
+FROM centos
 MAINTAINER Sander <mail@sandervanvugt.nl>
 
 # Add repo file
-ADD ./redhat.repo /etc/yum.repos.d/
+ADD ./centos.repo /etc/yum.repos.d/
 
 # Install cool software
 RUN yum --assumeyes update && \
