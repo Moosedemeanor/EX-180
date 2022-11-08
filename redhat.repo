@@ -1,0 +1,75 @@
+#
+# Certificate-Based Repositories
+# Managed by (rhsm) subscription-manager
+#
+# *** This file is auto-generated.  Changes made here will be over-written. ***
+# *** Use "subscription-manager repo-override --help" if you wish to make changes. ***
+#
+# If this file is empty and this system is subscribed consider
+# a "yum repolist" to refresh available repos
+#
+
+[ansible-2-for-rhel-8-x86_64-rpms]
+name = Red Hat Ansible Engine 2 for RHEL 8 x86_64 (RPMs)
+baseurl = https://rdl-celestialshrimp.redpen.dev/pulp/content/RedPen_Security/Library/content/dist/layered/rhel8/x86_64/ansible/2/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/katello-server-ca.pem
+sslclientkey = /etc/pki/entitlement/3988995520392388510-key.pem
+sslclientcert = /etc/pki/entitlement/3988995520392388510.pem
+metadata_expire = 1
+enabled_metadata = 0
+
+[rhel-8-for-x86_64-appstream-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs)
+baseurl = https://rdl-celestialshrimp.redpen.dev/pulp/content/RedPen_Security/Library/content/dist/rhel8/$releasever/x86_64/appstream/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/katello-server-ca.pem
+sslclientkey = /etc/pki/entitlement/3988995520392388510-key.pem
+sslclientcert = /etc/pki/entitlement/3988995520392388510.pem
+metadata_expire = 1
+enabled_metadata = 1
+
+[codeready-builder-for-rhel-8-x86_64-rpms]
+name = Red Hat CodeReady Linux Builder for RHEL 8 x86_64 (RPMs)
+baseurl = https://rdl-celestialshrimp.redpen.dev/pulp/content/RedPen_Security/Library/content/dist/rhel8/$releasever/x86_64/codeready-builder/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/katello-server-ca.pem
+sslclientkey = /etc/pki/entitlement/3988995520392388510-key.pem
+sslclientcert = /etc/pki/entitlement/3988995520392388510.pem
+metadata_expire = 1
+enabled_metadata = 0
+
+[satellite-tools-6.10-for-rhel-8-x86_64-rpms]
+name = Red Hat Satellite Tools 6.10 for RHEL 8 x86_64 (RPMs)
+baseurl = https://rdl-celestialshrimp.redpen.dev/pulp/content/RedPen_Security/Library/content/dist/layered/rhel8/x86_64/sat-tools/6.10/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/katello-server-ca.pem
+sslclientkey = /etc/pki/entitlement/3988995520392388510-key.pem
+sslclientcert = /etc/pki/entitlement/3988995520392388510.pem
+metadata_expire = 1
+enabled_metadata = 0
+
+[rhel-8-for-x86_64-baseos-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs)
+baseurl = https://rdl-celestialshrimp.redpen.dev/pulp/content/RedPen_Security/Library/content/dist/rhel8/$releasever/x86_64/baseos/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/katello-server-ca.pem
+sslclientkey = /etc/pki/entitlement/3988995520392388510-key.pem
+sslclientcert = /etc/pki/entitlement/3988995520392388510.pem
+metadata_expire = 1
+enabled_metadata = 1
