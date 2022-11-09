@@ -1,4 +1,4 @@
-FROM ubi8/ubi
+FROM ubi8
 MAINTAINER Charles Bouley <info@redpensecurity.com>
 LABEL description ="EX180 Lesson 9 Laboratory"
 
