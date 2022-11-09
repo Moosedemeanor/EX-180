@@ -2,6 +2,8 @@ FROM centos
 MAINTAINER Charles Bouley <info@redpensecurity.com>
 LABEL description ="EX180 Lesson 9 Laboratory"
 
+COPY ./centos.repo /etc/yum.repos.d/
+
 # Install nmap and httpd software
 RUN     yum --assumeyes update && \
         yum --assumeyes install bash httpd nmap iproute && \
