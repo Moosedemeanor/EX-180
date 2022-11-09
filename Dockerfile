@@ -1,15 +1,13 @@
-FROM centos
-MAINTAINER Sander <mail@sandervanvugt.nl>
+FROM ubi8/ubi
+MAINTAINER Charles Bouley <info@redpensecurity.com>
+LABEL description ="EX180 Lesson 9 Laboratory"
 
-# Add repo file
-ADD ./centos.repo /etc/yum.repos.d/
+# Install nmap and httpd software
+RUN     yum --assumeyes update && \
+        yum --assumeyes install bash httpd nmap iproute && \
+        yum clean all && \
+        echo "RedPen EX180 Lesson 9 Laboratory" > /var/www/html/index.html
 
-# Install cool software
-RUN yum --assumeyes update && \
-yum --assumeyes install \
-nmap iproute && \
-bash && \
-yum clean all
-
-ENTRYPOINT ["/usr/bin/nmap"]
-CMD ["-sn", "172.17.0.0/24"] 
+EXPOSE 80
+ENTRYPOINT ["/usr/sbin/httpd"]
+CMD ["-D", "FOREGROUND"]
